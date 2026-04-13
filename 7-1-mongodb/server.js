@@ -39,3 +39,7 @@ async function updateStudent() {
   await Student.updateOne({ name: "Ali" }, { age: 22 });
   console.log("✅ Updated Ali");
 }
+async function deleteStudent() {
+  await Student.deleteOne({ name: "Sara" });
+  console.log("✅ Deleted Sara");
+}
