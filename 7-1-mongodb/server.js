@@ -34,3 +34,8 @@ async function readStudents() {
   const allStudents = await Student.find();
   console.log("All students:", allStudents);
 }
+
+async function updateStudent() {
+  await Student.updateOne({ name: "Ali" }, { age: 22 });
+  console.log("✅ Updated Ali");
+}
