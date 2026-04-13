@@ -30,3 +30,7 @@ try {
   await mongoose.disconnect();
   console.log("🔌 Disconnected");
 }
+async function readStudents() {
+  const allStudents = await Student.find();
+  console.log("All students:", allStudents);
+}
